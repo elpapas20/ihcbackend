@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "libros",
+  "info": {
+    "singularName": "libro",
+    "pluralName": "libros",
+    "displayName": "libro"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "disponible": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "descripcion": {
+      "type": "blocks"
+    },
+    "autor": {
+      "type": "email"
+    },
+    "portada": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "sku": {
+      "type": "uid"
+    },
+    "categorias": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categoria.categoria",
+      "inversedBy": "libros"
+    }
+  }
+}
