@@ -13,7 +13,7 @@ export default [
         'http://localhost:3000', // Tu entorno local
         'http://localhost:1337', // El admin de Strapi local
         'https://ihcbackend.onrender.com', // Tu backend
-        'https://pgesfrond-qjt507tr3-2021204089danyelo-7175s-projects.vercel.app' // ¡AÑADE TU URL DE VERCEL AQUÍ!
+        'https://pgesfrond-git-vercel-re-07a23d-2021204089danyelo-7175s-projects.vercel.app' // ¡AÑADE TU URL DE VERCEL AQUÍ!
       ],
     },
   },
